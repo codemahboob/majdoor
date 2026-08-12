@@ -230,7 +230,7 @@ button:focus-visible, input:focus-visible, a:focus-visible{
   display:block;
   object-fit:cover;
   object-position:center;
-  transform:scale(1.15);
+  transform:scale(1.20);
   border-radius:50%;
 }
 
