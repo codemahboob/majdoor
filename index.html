@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>मजदूर अड्डा — Top 15 Bhojpuri Hits</title>
+<meta name="description" content="मजदूर अड्डा — चलती-फिरती छत, ढलता सूरज और टॉप 15 भोजपुरी गाने। बजाओ और झूमो।">
+<meta name="theme-color" content="#241333">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<picture class="hero-bg">
+  <source media="(min-width: 760px)" srcset="assets/hero-desktop.jpg">
+  <img src="assets/hero-mobile.jpg" alt="ढलते सूरज में छत पर दो मजदूर देसी दारू के साथ गाना सुनते हुए" class="hero-img" fetchpriority="high">
+</picture>
+<div class="hero-scrim"></div>
+<div class="hero-vignette"></div>
+
+<header class="topbar">
+  <div class="online-pill">
+    <span class="dot"></span>
+    <span id="onlineCount">28</span>&nbsp;online
+  </div>
+  <div class="topbar-actions">
+    <a class="instagram-credit"
+   href="https://instagram.com/mahboooob_ahmed"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Made by Instagram — mahboooob_ahmed">
+  <span class="instagram-credit-label">Made by</span>
+  <svg class="instagram-credit-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+  </svg>
+  <span class="instagram-credit-url">instagram.com/mahboooob_ahmed</span>
+</a>
+  </div>
+</header>
+
+<main class="hero-content">
+  <h1 class="logo">मजदूर <span>अड्डा</span></h1>
+  <p class="tagline">छत, ढलता सूरज, अउर टॉप 15 भोजपुरी हिट्स</p>
+</main>
+
+<div id="youtubePlayer" class="youtube-player" aria-hidden="true"></div>
+
+<section class="player" id="player" aria-label="Music player">
+  <div class="player-art" id="playerArt">
+    <img src="assets/tumsa-koi-pya.jpg" alt="Tumsa Koi Pya album artwork">
+  </div>
+
+  <section class="player-info">
+    <div class="track-title" id="trackTitle" aria-live="polite">
+      <div class="track-title-track">
+        <span>गाना चुनो</span>
+        <span aria-hidden="true">गाना चुनो</span>
+      </div>
+    </div>
+    <div class="track-singer" id="trackSinger">मजदूर अड्डा</div>
+
+    <div class="progress-wrap">
+      <input type="range" id="seek" class="seek" value="0" min="0" max="100" step="0.1" aria-label="Seek">
+    </div>
+
+    <div class="time-row">
+      <span id="curTime">0:00</span>
+      <span class="time-sep">/</span>
+      <span id="durTime">0:00</span>
+    </div>
+  </section>
+
+  <nav class="controls" aria-label="Playback controls">
+    <button id="prevBtn" class="skip prev" aria-label="पिछला गाना" title="Previous"></button>
+
+    <button id="playBtn" class="play" aria-label="Play">
+      <span class="pause-icon" id="pauseVisual" style="display:none"><i></i><i></i></span>
+      <span class="play-icon" id="playVisual"></span>
+    </button>
+
+    <button id="nextBtn" class="skip next" aria-label="अगला गाना" title="Next"></button>
+  </nav>
+</section>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
