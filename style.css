@@ -220,16 +220,18 @@ button:focus-visible, input:focus-visible, a:focus-visible{
   border-radius:50%;
   overflow:hidden;
   position:relative;
-  box-shadow:0 6px 18px rgba(0,0,0,.34), inset 0 0 0 1px rgba(255,255,255,.12);
-  background:#311a1d;
+  box-shadow:0 6px 18px rgba(0,0,0,.34);
+  background:transparent;
 }
+
 .player-art img{
   width:100%;
   height:100%;
   display:block;
   object-fit:cover;
   object-position:center;
-  transform:scale(1.02);
+  transform:scale(1.08);
+  border-radius:50%;
 }
 
 /* The currently playing song's artwork slowly spins while music plays. */
